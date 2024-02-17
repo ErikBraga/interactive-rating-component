@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+.clicado{
+    background-color: #FD7515 !important;
+    color: #FFF !important; 
+}
+
+body{
+    position: relative;
+    flex-direction: column;
+    font-family: "Overpass", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #131519;
+}
+
+/* container */
+#container{
+    width: 460px;
+    height: 460px;
+    background-image: radial-gradient(farthest-side at 220px 0px, #272f39, #171E27);
+    border-radius: 30px;
+    padding: 40px;
+}
+
+/* estrela icon */
+#container .img-container{
+    display: inline-block;
+    position: relative;
+    background-color: #262F39;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+#container img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 15px;
+}
+
+/* container textos */
+#container h1{
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+#container p{
+    color: hsl(217, 12%, 63%);
+    margin-right: 20px;
+}
+
+/* container-btns */
+#container-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#container-btns .btn{
+    font-size: 18px;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: none;
+    color: hsl(217, 12%, 63%);;
+    background-color: #262F39;
+    cursor: pointer;
+}
+
+#container-btns .btn:hover{
+    color: #FFF;
+    animation-name: spincolor;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in-out;
+    background-color: #FD7515;
+}
+
+@keyframes spincolor{
+    0%{
+        background-color: #959EAC;
+    }
+
+    80%{
+        background-color: #FD7515;
+    }
+}
+
+/* submit-btn */
+.submit-btn{
+    font-size: 17px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50px;
+    border-radius: 60px;
+    margin-top: 40px;
+    border: none;
+    color: #FFF;
+    background-color: #FD7515;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    transition: all 0.5s;
+    background-color: #FFF;
+    color: #FD7515;
+}
+
+/* container-2 */
+#container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 460px;
+    height: 460px;
+    background-image: radial-gradient(farthest-side at 220px 0px, #272f39, #171E27);
+    border-radius: 30px;
+    padding: 35px;
+}
+
+#container-2 img{
+    position: absolute;
+    top: 50px;
+}
+
+#container-2 span{
+    margin-top: 55px;
+    padding: 5px;
+    background-color: #262F39;
+    color: #d27d40;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+#container-2 h1{
+    color: #FFF;
+    margin-top: 50px;
+}
+
+#container-2 p{
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #959EAC;
+    line-height: 1.5em;
+}
+
+/* footer */
+.attribution{
+    color: #959EAC;
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 360px) and (max-width: 510px){
+    #container{
+        width: 90%;
+    }
+
+    #container-btns .btn{
+        width: 45px;
+        height: 45px;
+    }
+
+    #container-2{
+        width: 90%;
+    }
+
+    #container-2 p{
+        bottom: 40px;
+    }
+}
